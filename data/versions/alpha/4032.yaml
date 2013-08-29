@@ -1,0 +1,29 @@
+version: 9.1.0.4032
+linux_version: Alpha10
+linux_version_short: a10
+full_name: Kingsoft Office for Linux Alpha10
+whats_new: |
+    New 2013 user interface
+    Add muilti language choose support
+    Spreetsheets: Add chart support(readonly currently)
+    Spreetsheets: Add txt, csv and prn file format multi text encoding support
+    Spreetsheets: Add xml file format support
+    Spreetsheets: Add xlsx's file crypt support
+    Writer: Add txt file format multi text encoding support
+    Fixup spreetsheets open xlsx lost some of autoshapes's filling
+    Fixup can not open file that's name contains '\'
+    Fixup presentation crashed when insert special background music
+release_notes: |
+    In order to get an unity package name, we change package from wps-office to kingsoft-office.
+    If you have installed previously package, remove it first, please.
+addresses:
+    - type: deb
+      address: http://wdl.cache.ijinshan.com/wps/download/Linux/unstable/kingsoft-office_9.1.0.4032~a10_i386.deb
+      sha1sum: 6744c142eaea4af06e8f7d0e0cdd6c25c973ffbb
+    - type: rpm
+      address: http://wdl.cache.ijinshan.com/wps/download/Linux/unstable/kingsoft-office-9.1.0.4032-0.1.a10.i686.rpm
+      sha1sum: 86d8051fe55796d8a49eec32fbbdb9cf0b759827
+    - type: tar.xz
+      address: http://wdl.cache.ijinshan.com/wps/download/Linux/unstable/kingsoft-office_9.1.0.4032~a10_x86.tar.xz
+      sha1sum: 8a71ac00c8e22fa43d75379b215038807fc4d503
+

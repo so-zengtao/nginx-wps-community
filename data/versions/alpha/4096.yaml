@@ -1,0 +1,17 @@
+version: 9.1.0.4096
+linux_version: Alpha11 Patch1
+linux_version_short: a11p1
+full_name: Kingsoft Office for Linux Alpha11 Patch1
+whats_new: |
+    Fixed: The program crashed when change some options in options dialog without open a document.
+addresses:
+    - type: deb
+      address: http://wdl.cache.ijinshan.com/wps/download/Linux/unstable/kingsoft-office_9.1.0.4096~a11p1_i386.deb
+      sha1sum: b94b6f5c86952b26352795834cfe1964da9ff91f
+    - type: rpm
+      address: http://wdl.cache.ijinshan.com/wps/download/Linux/unstable/kingsoft-office-9.1.0.4096-0.1.a11p1.i686.rpm
+      sha1sum: 3a4fe35f43881c210b6e21e191f7fbbe67a45bbc
+    - type: tar.xz
+      address: http://wdl.cache.ijinshan.com/wps/download/Linux/unstable/kingsoft-office_9.1.0.4096~a11p1_x86.tar.xz
+      sha1sum: e608427fede90fc7f4ae9f4c7bfe64b73b836a8a
+

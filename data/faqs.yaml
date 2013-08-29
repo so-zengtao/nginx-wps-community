@@ -1,0 +1,19 @@
+- Q: Why my formula show incorrectly?
+  A: |
+    Mostly, formula contains some symbol charactors, KSO does not carry some 
+    copyright fonts that is necessary to show formula, such as symbol, wingdings, webdings...
+    You can get there fonts <a href="/download/fonts/">here</a>.
+- Q: Missing fonts on startup?
+  A: See above. ^_^
+- Q: Does kingsoft office plan to support odf?
+  A: |
+    I'm sorry. We have no plan to support odf, recently. 
+    I hope <a href="http://wps-community.org/forum/viewtopic.php?f=4&t=26&p=96">this post</a> can tell you why.
+- Q: Do you have any roadmap or plans to provide 64-bit packages in the future?
+  A: |
+    Yes, we have plan to provide x64 support.
+    But our code is ported from windows, and using old com style.
+    It's hard to support x64.
+    We hope x64-version could run at the end of the year.
+    But clear time is hard to expect.
+    <a href="http://wps-community.org/forum/viewtopic.php?f=4&t=66">This post</a> is the last news about x64 version.

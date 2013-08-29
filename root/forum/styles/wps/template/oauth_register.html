@@ -1,0 +1,44 @@
+<!-- INCLUDE overall_header.html -->
+
+<script type="text/javascript">
+// <![CDATA[
+	onload_functions.push('document.getElementById("<!-- IF S_ADMIN_AUTH -->{PASSWORD_CREDENTIAL}<!-- ELSE -->{USERNAME_CREDENTIAL}<!-- ENDIF -->").focus();');
+// ]]>
+</script>
+
+<form action="{S_OAUTH_REG_ACTION}" method="post" id="register">
+<div class="panel">
+	<div class="inner"><span class="corners-top"><span></span></span>
+
+	<div class="content">
+		<h2>{L_REGISTER}</h2>
+
+		<fieldset class="fields2">
+		<dl>
+			<dt><label for="EMAIL">{L_EMAIL}:</label></dt>
+			<dd><input type="text" name="EMAIL" id="EMAIL" size="25" value="{EMAIL}" disabled='1' class="inputbox autowidth" /></dd>
+		</dl>
+		<dl>
+			<dt><label for="USERNAME">{L_NICKNAME}:</label></dt>
+			<dd>
+				<input type="text" tabindex="1" name="USERNAME" id="USERNAME" size="25" value="{USERNAME}" class="inputbox autowidth" />
+				<!-- IF USERNAME_EXISTS -->
+					<span class="error">{L_USERNAME_TAKEN_USERNAME}</span>
+				<!-- ENDIF -->
+				<!-- IF USERNAME_TOO_SHORT -->
+					<span class="error">{L_TOO_SHORT_USERNAME}</span>
+				<!-- ENDIF -->
+			</dd>
+		</dl>
+		<dl>
+			<dt>&nbsp;</dt>
+			<dd>{S_HIDDEN_FIELDS}<input type="submit" name="register" tabindex="2" value="{L_REGISTER}" class="button1" /></dd>
+		</dl>
+		</fieldset>
+	</div>
+	<span class="corners-bottom"><span></span></span></div>
+</div>
+
+</form>
+
+<!-- INCLUDE overall_footer.html -->

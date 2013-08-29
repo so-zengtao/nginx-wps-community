@@ -1,0 +1,28 @@
+version: 9.1.0.4127
+linux_version: Alpha11 Patch3
+linux_version_short: a11p3
+full_name: Kingsoft Office for Linux Alpha11 Patch3
+whats_new: |
+    Added: A user-friendly way to install dictionaries for spell checker.
+    Added: Pre-edit support. (Enhanced Korean and Japanese input support)
+    Fixed: Cannot use native Open/Save Dialog in Mate desktop environment.
+    Fixed: Cannot save to cifs file system.
+    Fixed: Cannot show user custom splash when using a custom skin.
+    Fixed: Cannot add new words to custom dictionary.
+    Fixed: Cannot use mouse wheel when using the shortcut to the main menu.
+    Fixed: Some hyperlinks invalid in Kingsoft Presentation.
+    Fixed: Cannot use European symbols in Kingsoft Spreadsheets.
+    Fixed: Print page number error in Kingsoft Spreadsheets.
+    Fixed: Cannot open "Options Dialog" when there is no active document in Kingsoft Spreadsheets.
+    Fixed: Cannot group and un-group multiple times in Kingsoft Spreadsheets.
+addresses:
+    - type: deb
+      address: http://wdl.cache.ijinshan.com/wps/download/Linux/unstable/kingsoft-office_9.1.0.4127~a11p3_i386.deb
+      sha1sum: 53c30d9e70eccdc90bfca05e76d6ff866b463476
+    - type: rpm
+      address: http://wdl.cache.ijinshan.com/wps/download/Linux/unstable/kingsoft-office-9.1.0.4127-0.1.a11p3.i686.rpm
+      sha1sum: 5208aa6f0b275767b5fc3ae4368abf57cf131e5e
+    - type: tar.xz
+      address: http://wdl.cache.ijinshan.com/wps/download/Linux/unstable/kingsoft-office_9.1.0.4127~a11p3_x86.tar.xz
+      sha1sum: ee7e84f7eff465d5b100f56784e1e6684b4560c5
+

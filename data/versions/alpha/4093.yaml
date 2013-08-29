@@ -1,0 +1,33 @@
+version: 9.1.0.4093
+linux_version: Alpha11
+linux_version_short: a11
+full_name: Kingsoft Office for Linux Alpha11
+whats_new: |
+    Added: Supported PivotTable function in Kingsoft Spreatsheets.
+    Changed: Unified the templates dir to ~/.kingsoft/templates 
+    Fixed: The program crashed when pass a relative file path to program by command line.
+    Fixed: Cannot create another instance of the program when use a different account in Kingsoft Writer and Kingsoft Presentation.
+    Fixed: Cannot to match fonts in different locales.
+    Fixed: Missing option "disable the online templates auto-start". Now you can set it at "Options->General and Save->Open mode".
+    Fixed: The width of WordArt control adapted to the dialog size.
+    Fixed: Cannot open options dialog when current document do not exist in Kingsoft Writer and Kingsoft Presentation.
+    Fixed: Cannot storage settings about font and style to normal template in Kingsoft Writer.
+    Fixed: Missing option "Auto convert straight quote to curly quote" in Kingsoft Writer.
+    Fixed: Cannot hide Grid and Guides in Kingsoft Presentation.
+    Fixed: Kingsoft Presentation deadloop when playing sound in certain situations.
+    Fixed: Cannot set default layout of slides in English version in Kingsoft Presentation.
+    Fixed: Error in calculating charactor width when using a font which is not exist in system in Kingsoft Spreatsheets.
+    Fixed: The view will scroll to top-right after finishing editing in the case of non-100% zoom.
+release_notes: |
+    Welcome to WPS Community website <a href="http://wps-community.org">http://wps-community.org/</a>. The links have also been added to the help menu.
+addresses:
+    - type: deb
+      address: http://wdl.cache.ijinshan.com/wps/download/Linux/unstable/kingsoft-office_9.1.0.4093~a11_i386.deb
+      sha1sum: 70e46f3a4124f7e6ef7542d84632c40c48a579cc
+    - type: rpm
+      address: http://wdl.cache.ijinshan.com/wps/download/Linux/unstable/kingsoft-office-9.1.0.4093-0.1.a11.i686.rpm
+      sha1sum: 45d5e3213477c9d7055072d6401258847709a69b
+    - type: tar.xz
+      address: http://wdl.cache.ijinshan.com/wps/download/Linux/unstable/kingsoft-office_9.1.0.4093~a11_x86.tar.xz
+      sha1sum: 58ed3d3be6bc3c1283bb0393229b6152d764d2e7
+

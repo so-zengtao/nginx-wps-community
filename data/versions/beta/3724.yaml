@@ -1,0 +1,23 @@
+version: 8.1.0.3724
+linux_version: Beta1 Patch1
+linux_version_short: b1
+full_name: Kingsoft Office for Linux Beta1
+whats_new: |
+    Fixup spreetsheets crashed when cuts&pastes cross files or tables
+    Fixup presentation can not insert and play music
+    Fixup presentation crashed when click the sound image target
+    Fixup all products' problem that can not open https and mailto's Hyperlinks
+    Fixup wps forward compatibility menu button's update error while moveing out the mouse
+release_notes: |
+    WPS For Linux is here in <a href="http://wps-community.org">http://wps-community.org/</a>. Welcome
+addresses:
+    - type: deb
+      address: http://wdl.cache.ijinshan.com/wps/download/Linux/unstable/wps-office_8.1.0.3724~b1p2_i386.deb
+      sha1sum: f20411b3c3953f4a254fa2789a0e93093045d862
+    - type: rpm
+      address: http://wdl.cache.ijinshan.com/wps/download/Linux/unstable/wps-office-8.1.0.3724-0.1.b1p2.i686.rpm
+      sha1sum: 605cbca3724e0b88441477c8a53f2b1451bbe169
+    - type: tar.xz
+      address: http://wdl.cache.ijinshan.com/wps/download/Linux/unstable/wps-office_8.1.0.3724~b1p2_x86.tar.xz
+      sha1sum: 0993024d409759bfb05da42c5603228d1dd8c21b
+

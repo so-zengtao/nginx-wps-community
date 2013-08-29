@@ -1,0 +1,23 @@
+version: 9.1.0.4111
+linux_version: Alpha11 Patch2
+linux_version_short: a11p2
+full_name: Kingsoft Office for Linux Alpha11 Patch2
+whats_new: |
+    Added: Check Spelling for non-English language.
+    Fixed: Cannot use native Open and Save dialog boxes in KDE.
+    Fixed: Printer settings do not take effect in Kingsoft Office.
+    Fixed: Cannot open PDF file directly after exporting to PDF.
+    Fixed: Cannot launch multi-instances of the same component in same user with different X desktops.
+    Fixed: Missing File button on the Insert tab.
+    Fixed: Incorrect formula result when insert a formula to the table in Kingsoft Writer.
+addresses:
+    - type: deb
+      address: http://wdl.cache.ijinshan.com/wps/download/Linux/unstable/kingsoft-office_9.1.0.4111~a11p2_i386.deb
+      sha1sum: 470e5f35e229f199b364150d4ea997e46a1fa6ce
+    - type: rpm
+      address: http://wdl.cache.ijinshan.com/wps/download/Linux/unstable/kingsoft-office-9.1.0.4111-0.1.a11p2.i686.rpm
+      sha1sum: 6dfa756eba2c0254e1f6467285f9096108bdbf9f
+    - type: tar.xz
+      address: http://wdl.cache.ijinshan.com/wps/download/Linux/unstable/kingsoft-office_9.1.0.4111~a11p2_x86.tar.xz
+      sha1sum: 5e0eac4f2f57e0dbf27cdbe1762619d82e7822c1
+
