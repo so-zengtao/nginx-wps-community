@@ -2,9 +2,9 @@
 
 require "md5"
 
-$file_path = "/home/ang/temp/wps_i18n/"
-$set_path = "/home/ang/temp/test_ruby/set/"
-$install_path = "/var/wps/mui/"
+$file_path = "/var/www/nginx-wps-community/var/wps_mui"
+$set_path = "/var/www/nginx-wps-community/var/set/"
+$install_path = "/var/www/nginx-wps-community/var/mui/"
 
 if not File.exists? $file_path
   puts "not exist"
@@ -37,21 +37,23 @@ def get_cur_md5 dir
   temp_file.close()
   return MD5.hexdigest(File.read($set_path + "temp"))
 end
+
 #读取上一次的指纹信息
 def get_md5_set file_name
   return MD5.hexdigest(File.read($set_path + file_name))
 end
+
 #比较本次和上一次的指纹信息
 dirs = Dir.entries($file_path).sort()
 dirs.each do |dir|
   if(dir != "." && dir != "..")
     if(get_cur_md5(dir) != get_md5_set(dir))
      #编译 安装 打包
-      `cd #{$file_path + dir};sudo make install`
+      `cd #{$file_path + dir}; make install`
       if ( 0 != $?.to_i)
-	system("/var/www/wps_community_website/root/bin/i18n/send.rb",dir)
+   	system("/var/www/nginx-wps-community/root/bin/i18n/send.rb",dir)
       end
-      puts `cd #{$install_path}; zip -r #{dir}.zip #{dir + "/"}`
+     # puts `cd #{$install_path}; zip -r #{dir}.zip #{dir + "/"}`
     end
   # 写回配置
    write_dir_md5(dir)

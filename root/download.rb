@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 require 'cgi'
 require './include/parts.rb'
-#require './include/funcs.rb'
+require './include/funcs.rb'
 require 'yaml'
 #lang_redirect 'zh', 'http://community.wps.cn/download/#alpha'
 
@@ -62,6 +62,7 @@ cont = <<EOF
 <h1>Product Download</h1>
 #{html_versions}
 </div>
+<h1>Language Package Downloads</h1>
 #{html_tail}
 EOF
 cgi = CGI.new
