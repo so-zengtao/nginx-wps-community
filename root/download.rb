@@ -62,7 +62,6 @@ cont = <<EOF
 <h1>Product Download</h1>
 #{html_versions}
 </div>
-<h1>Language Package Downloads</h1>
 #{html_tail}
 EOF
 cgi = CGI.new
