@@ -2,9 +2,8 @@
 
 require "md5"
 
-$file_path = "/var/www/nginx-wps-community/var/wps_mui"
+$file_path = "/var/www/nginx-wps-community/var/wps_mui/"
 $set_path = "/var/www/nginx-wps-community/var/set/"
-$install_path = "/var/www/nginx-wps-community/var/mui/"
 
 if not File.exists? $file_path
   puts "not exist"
@@ -53,7 +52,7 @@ dirs.each do |dir|
       if ( 0 != $?.to_i)
    	system("/var/www/nginx-wps-community/root/bin/i18n/send.rb",dir)
       end
-     # puts `cd #{$install_path}; zip -r #{dir}.zip #{dir + "/"}`
+      `cd ~/.kingsoft/mui; zip -r #{dir}.zip #{dir + "/"}; mv *.zip /var/www/nginx-wps-community/root/download/mui`
     end
   # 写回配置
    write_dir_md5(dir)
