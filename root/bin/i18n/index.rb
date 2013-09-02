@@ -1,6 +1,8 @@
-#! /usr/bin/env ruby1.8
-
+#!/usr/bin/env ruby
 require "md5"
+
+puts "Content-Type: text/plain"
+puts
 
 $file_path = "/var/www/nginx-wps-community/var/wps_mui/"
 $set_path = "/var/www/nginx-wps-community/var/set/"
@@ -45,10 +47,11 @@ end
 #比较本次和上一次的指纹信息
 dirs = Dir.entries($file_path).sort()
 dirs.each do |dir|
-  if(dir != "." && dir != "..")
+  if(dir != "." && dir != ".." && dir != ".git" && dir != ".gitignore" && dir != "each_locale")
     if(get_cur_md5(dir) != get_md5_set(dir))
      #编译 安装 打包
-      `cd #{$file_path + dir}; make install`
+      puts dir
+      `cd #{$file_path + dir};   make install`
       if ( 0 != $?.to_i)
    	system("/var/www/nginx-wps-community/root/bin/i18n/send.rb",dir)
       end
