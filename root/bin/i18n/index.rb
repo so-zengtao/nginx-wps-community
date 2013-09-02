@@ -1,6 +1,5 @@
 #!/usr/bin/env ruby
 require "md5"
-
 puts "Content-Type: text/plain"
 puts
 
@@ -57,7 +56,7 @@ dirs.each do |dir|
       end
       `cd ~/.kingsoft/mui; zip -r #{dir}.zip #{dir + "/"}; mv *.zip /var/www/nginx-wps-community/root/download/mui`
     end
-  # 写回配置
+  # 写回配置i
    write_dir_md5(dir)
   end
 end
